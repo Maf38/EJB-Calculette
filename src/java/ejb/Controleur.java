@@ -36,6 +36,31 @@ public class Controleur implements ControleurRemote {
         return conv.getConversionTable();
         
     }
+
+    @Override
+    public String hello() {
+        return calc.hello();
+    }
+
+    @Override
+    public double plus(double nb1, double nb2) {
+        return calc.plus(nb1,nb2);
+    }
+
+    @Override
+    public double divise(double nb1, double nb2) {
+        return calc.divise(nb1,nb2);
+    }
+
+    @Override
+    public double moins(double nb1, double nb2) {
+        return calc.moins(nb1,nb2);
+    }
+
+    @Override
+    public double multiplie(double nb1, double nb2) {
+       return calc.multiplie(nb1,nb2);
+    }
     
     
     
